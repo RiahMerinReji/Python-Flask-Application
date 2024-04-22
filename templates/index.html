@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Prediction</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+    <h1>Customer Purchase Verification</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="estimatedSalary">EstimatedSalary:</label>
+        <input type="number" id="estimatedSalary" name="estimatedSalary"><br><br>
+
+        <button type="submit">Check</button>
+        <h4>Prediction Result:</h4>
+        <h4>{{check_purchase}}</h4>
+    </form>
+    
+</body>
+</html>
+
